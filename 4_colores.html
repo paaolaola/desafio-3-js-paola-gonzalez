@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafio 3 - Funciones</title>
+    </head>
+    <body>
+        <!--Ejercicio 4 (Parte 1)-->
+        <div id="boxBlue" style="background-color: blue; width: 200px; height: 200px"></div>
+        <div id="boxRed" style="background-color: red; width: 200px; height: 200px"></div>
+        <div id="boxGreen" style="background-color: green; width: 200px; height: 200px"></div>
+        <div id="boxYellow" style="background-color: yellow; width: 200px; height: 200px"></div>
+
+        <script>
+            //Ejercicio 4 (Parte 1)
+            const boxBlue = document.getElementById("boxBlue");
+            const boxRed = document.getElementById("boxRed");
+            const boxGreen = document.getElementById("boxGreen");
+            const boxYellow = document.getElementById("boxYellow");
+
+            boxBlue.addEventListener("click", () => {
+                boxBlue.style.backgroundColor = "black";
+            });
+
+            boxRed.addEventListener("click", () => {
+                boxRed.style.backgroundColor = "black";
+            });
+
+            boxGreen.addEventListener("click", () => {
+                boxGreen.style.backgroundColor = "black";
+            });
+
+            boxYellow.addEventListener("click", () => {
+                boxYellow.style.backgroundColor = "black";
+            });
+        </script>
+    </body>
+</html>

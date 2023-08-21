@@ -5,15 +5,21 @@
 
 /////////////////////////////////////////
 
+const ele = document.querySelector("#ele1");
+
 //Funcion anonima modificada click
 
-const ele = document.getElementById("ele1");
-ele.addEventListener("click", function () {
+ele.addEventListener("click", () => {
     ele.style.backgroundColor = "yellow";
 });
 
-//Funcion anonima modificada color green
-ele.style.backgroundColor = "green";
-ele.addEventListener("click", function () {
-    pintar("yellow");
+//Funcion modificada color green
+const pintar = (id, color = "green") => {
+    const elemento = document.querySelector(id);
+    elemento.style.backgroundColor = color;
+};
+pintar("#ele1");
+
+ele.addEventListener("click", () => {
+    ele.style.backgroundColor = "yellow";
 });
